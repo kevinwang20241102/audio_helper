@@ -30,3 +30,24 @@ class AsrData(BaseModel):
 class AsrResponse(BaseModel):
     request_id: str
     data: AsrData
+
+
+class ExtractRequest(BaseModel):
+    text: str = Field(
+        min_length=1,
+        examples=["我在杭州东站，朋友在西湖龙翔桥地铁站，帮我们找个中间的咖啡店。"],
+    )
+    city: str = Field(min_length=1, examples=["杭州"])
+
+
+class ExtractData(BaseModel):
+    city_a: str
+    address_a: str
+    city_b: str
+    address_b: str
+    category: str
+
+
+class ExtractResponse(BaseModel):
+    request_id: str
+    data: ExtractData
