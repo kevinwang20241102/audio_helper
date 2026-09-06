@@ -1,0 +1,30 @@
+:root {
+  color: #1a1a1a;
+  background: #f6f6f4;
+  font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.page {
+  max-width: 40rem;
+  margin: 4rem auto;
+  padding: 0 1.5rem;
+}
+
+h1 {
+  font-size: 1.75rem;
+  font-weight: 650;
+  margin-bottom: 0.75rem;
+}
+
+.status {
+  margin-top: 1.5rem;
+  color: #333;
+}
+
+.status-error {
+  color: #8a1f11;
+}
