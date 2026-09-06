@@ -31,6 +31,7 @@ class Settings(BaseSettings):
     deepseek_url: str = "https://api.deepseek.com/chat/completions"
     amap_geo_url: str = "https://restapi.amap.com/v3/geocode/geo"
     amap_around_url: str = "https://restapi.amap.com/v3/place/around"
+    ffprobe_path: str = ""
 
     @property
     def cors_origin_list(self) -> list[str]:

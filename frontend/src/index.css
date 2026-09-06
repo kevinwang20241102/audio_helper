@@ -20,6 +20,71 @@ h1 {
   margin-bottom: 0.75rem;
 }
 
+.city-select {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 1.5rem 0;
+}
+
+.city-select input {
+  flex: 1;
+  max-width: 12rem;
+  padding: 0.4rem 0.6rem;
+  border: 1px solid #c8c8c4;
+  background: #fff;
+  color: inherit;
+  font: inherit;
+}
+
+.recorder {
+  margin: 1.5rem 0 2rem;
+}
+
+.record-button {
+  min-width: 10rem;
+  min-height: 10rem;
+  border-radius: 50%;
+  border: 1px solid #1a1a1a;
+  background: #fff;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  user-select: none;
+  touch-action: none;
+}
+
+.record-button.recording {
+  background: #1a1a1a;
+  color: #fff;
+}
+
+.record-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.clip {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.clip audio {
+  width: 100%;
+}
+
+.download {
+  color: inherit;
+}
+
+.hint {
+  margin-top: 0.75rem;
+  color: #555;
+  font-size: 0.9rem;
+}
+
 .status {
   margin-top: 1.5rem;
   color: #333;
