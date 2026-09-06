@@ -43,7 +43,7 @@ async def validation_error_handler(
         content=error_body(
             request,
             "VALIDATION_ERROR",
-            "请求缺少录音文件或字段不正确。",
+            "请求缺少必要字段或字段类型不正确。",
             stage,
         ),
     )

@@ -17,3 +17,16 @@ class UploadData(BaseModel):
 class UploadResponse(BaseModel):
     request_id: str
     data: UploadData
+
+
+class AsrRequest(BaseModel):
+    audio_id: str = Field(examples=["aud_7c9e0e1a2b3c4d5e6f7a8b9c0d1e2f3"])
+
+
+class AsrData(BaseModel):
+    text: str
+
+
+class AsrResponse(BaseModel):
+    request_id: str
+    data: AsrData
